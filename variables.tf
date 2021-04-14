@@ -5,6 +5,8 @@
 variable "prefix" {
   type        = string
   description = "(optional) prefix for basic network infra"
+
+  default = "default"
 }
 
 variable "tags" {
@@ -16,7 +18,7 @@ variable "tags" {
 # VPC Vars
 ###########
 
-variable "shared" {
+variable "snat_enable" {
   type        = bool
   description = "(optional) SNAT should be used or not"
 
@@ -25,7 +27,7 @@ variable "shared" {
 
 variable "vpc_cidr" {
   type        = string
-  description = "(required) representing IP range for the subnet"
+  description = "(required) representing IP range for the VPC"
 }
 
 ##############
@@ -54,7 +56,7 @@ variable "dns_nameservers" {
 
 variable "ntp_addresses" {
   type        = list(string)
-  description = "(optional) array of NTP server addresses configured for the subnet"
+  description = "(optional) an array of NTP server addresses configured for the subnet"
 
   default = [
     "10.100.0.33",

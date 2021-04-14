@@ -4,7 +4,7 @@
 resource "opentelekomcloud_vpc_v1" "this" {
   name   = "${var.prefix}_vpc"
   cidr   = var.vpc_cidr
-  shared = var.shared
+  shared = var.snat_enable
 
   tags = var.tags
 }
@@ -14,7 +14,7 @@ resource "opentelekomcloud_vpc_v1" "this" {
 #############
 resource "opentelekomcloud_vpc_subnet_v1" "this" {
   name       = "${var.prefix}_subnet"
-  cidr       = var.subnet_cidr!="" ? var.subnet_cidr : var.vpc_cidr
+  cidr       = var.subnet_cidr != "" ? var.subnet_cidr : var.vpc_cidr
   gateway_ip = var.gateway_ip
 
   vpc_id            = opentelekomcloud_vpc_v1.this.id

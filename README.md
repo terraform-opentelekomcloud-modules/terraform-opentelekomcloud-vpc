@@ -40,7 +40,7 @@ module "vpc" {
 
 ## Examples
 
-TBD
+* [Simple VPC](https://github.com/terraform-opentelekomcloud-modules/terraform-opentelekomcloud-vpc/tree/main/examples/simple-vpc)
 
 ## Requirements
 

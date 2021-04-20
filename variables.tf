@@ -27,7 +27,7 @@ variable "snat_enable" {
 
 variable "vpc_cidr" {
   type        = string
-  description = "(required) representing IP range for the VPC"
+  description = "(required) IP range for the VPC"
 }
 
 ##############
@@ -36,12 +36,12 @@ variable "vpc_cidr" {
 
 variable "subnet_cidr" {
   type        = string
-  description = "(required) representing IP range for the subnet"
+  description = "(required) IP range for the subnet"
 }
 
 variable "gateway_ip" {
   type        = string
-  description = "(required) representing gateway of the subnet"
+  description = "(required) gateway of the subnet"
 }
 
 variable "dns_nameservers" {
@@ -50,7 +50,7 @@ variable "dns_nameservers" {
 
   default = [
     "100.125.4.25",
-    "100.125.129.199"
+    "8.8.8.8"
   ]
 }
 
@@ -66,7 +66,9 @@ variable "ntp_addresses" {
 
 variable "availability_zone" {
   type        = string
-  description = "(optional) identifies the availability zone (AZ) to which the subnet belongs"
+  description = "(optional) the availability zone (AZ) to which the subnet belongs"
+
+  default = "eu-de-01"
 }
 
 variable "dhcp_enable" {

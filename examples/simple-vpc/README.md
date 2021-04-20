@@ -16,10 +16,10 @@ Note that this example may create resources which can cost money. Run `terraform
 
 ## Requirements
 
-| Name                                                                              | Version    |
-| --------------------------------------------------------------------------------- | ---------- |
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform)         | >= 0.12.21 |
-| <a name="requirement_opentelekomcloud"></a> [aws](#requirement\_opentelekomcloud) | >= 1.23.6  |
+| Name                                                                                           | Version    |
+| ---------------------------------------------------------------------------------------------- | ---------- |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform)                      | >= 0.12.21 |
+| <a name="requirement_opentelekomcloud"></a> [opentelekomcloud](#requirement\_opentelekomcloud) | >= 1.23.6  |
 
 ## Providers
 

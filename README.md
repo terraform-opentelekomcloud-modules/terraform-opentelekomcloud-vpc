@@ -89,7 +89,6 @@ No modules.
 | <a name="output_subnet_dns"></a> [subnet\_dns](#output\_subnet\_dns)                        | The DNS name servers of the Subnet      |
 
 
-
 ## Authors
 
 Module managed by [Rodion Gyrbu](https://github.com/lego963).

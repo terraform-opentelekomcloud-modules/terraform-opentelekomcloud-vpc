@@ -67,6 +67,8 @@ variable "ntp_addresses" {
 variable "availability_zone" {
   type        = string
   description = "(optional) the availability zone (AZ) to which the subnet belongs"
+
+  default = "eu-de-01"
 }
 
 variable "dhcp_enable" {

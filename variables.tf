@@ -50,7 +50,7 @@ variable "dns_nameservers" {
 
   default = [
     "100.125.4.25",
-    "100.125.129.199"
+    "8.8.8.8"
   ]
 }
 

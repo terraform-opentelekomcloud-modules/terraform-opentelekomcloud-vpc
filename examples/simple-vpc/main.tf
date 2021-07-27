@@ -16,7 +16,7 @@ module "vpc" {
   availability_zone = "eu-de-03"
 
   dhcp_enable = true
-  shared      = true
+  snat_enable = true
 
 
   tags = {

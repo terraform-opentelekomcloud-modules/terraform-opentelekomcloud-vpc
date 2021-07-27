@@ -20,7 +20,12 @@ output "vpc_enable_snat" {
 
 output "subnet_id" {
   description = "The ID of the Subnet"
-  value       = opentelekomcloud_vpc_subnet_v1.this.id
+  value       = opentelekomcloud_vpc_subnet_v1.this.subnet_id
+}
+
+output "network_id" {
+  description = "The ID of the Network"
+  value       = opentelekomcloud_vpc_subnet_v1.this.network_id
 }
 
 output "subnet_name" {

@@ -19,7 +19,7 @@ Note that this example may create resources which can cost money. Run `terraform
 | Name                                                                                           | Version    |
 | ---------------------------------------------------------------------------------------------- | ---------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform)                      | >= 0.12.21 |
-| <a name="requirement_opentelekomcloud"></a> [opentelekomcloud](#requirement\_opentelekomcloud) | >= 1.23.6  |
+| <a name="requirement_opentelekomcloud"></a> [opentelekomcloud](#requirement\_opentelekomcloud) | >= 1.23.9  |
 
 ## Providers
 
@@ -41,9 +41,10 @@ No inputs.
 
 ## Outputs
 
-| Name                                                                                                 | Description                  |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------- |
-| <a name="output_subnet_cidr_block"></a> [private\_subnet\_cidr\_block](#output\_subnet\_cidr\_block) | The CIDR block of the Subnet |
-| <a name="output_subnet_id"></a> [public\_subnet\_id](#output\_subnet\_id)                            | The ID of the Subnet         |
-| <a name="output_vpc_cidr_block"></a> [vpc\_cidr\_block](#output\_vpc\_cidr\_block)                   | The CIDR block of the VPC    |
-| <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id)                                             | The ID of the VPC            |
+| Name                                                                                        | Description                  |
+| ------------------------------------------------------------------------------------------- | ---------------------------- |
+| <a name="output_subnet_cidr_block"></a> [subnet\_cidr\_block](#output\_subnet\_cidr\_block) | The CIDR block of the Subnet |
+| <a name="output_subnet_id"></a> [subnet\_id](#output\_subnet\_id)                           | The ID of the Subnet         |
+| <a name="output_network_id"></a> [network\_id](#output\_netowork\_id)                       | The ID of the Network        |
+| <a name="output_vpc_cidr_block"></a> [vpc\_cidr\_block](#output\_vpc\_cidr\_block)          | The CIDR block of the VPC    |
+| <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id)                                    | The ID of the VPC            |
